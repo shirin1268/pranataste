@@ -1,0 +1,106 @@
+<!--
+  Generated template for the AddrecipePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Addrecipe</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list >
+
+
+    <ion-item>
+      <ion-label>Title</ion-label>
+    </ion-item>
+
+      <ion-card >
+      <ion-input
+        type="text"
+        placeholder="Title"
+        [(ngModel)]="titleProp">
+      </ion-input>
+    </ion-card>
+
+
+
+    <ion-item>
+      <ion-label>Category</ion-label>
+    </ion-item>
+      <ion-card >
+      <ion-input
+        type="text"
+        placeholder="Category"
+        [(ngModel)]="categoryProp">
+      </ion-input>
+    </ion-card>
+
+
+
+    <ion-item>
+      <ion-label>Avatar</ion-label>
+    </ion-item>
+      <ion-card >
+      <ion-input
+        icon-left="camera"
+        type="text"
+        placeholder="Flag of your country"
+        [(ngModel)]="avatarUrlProp">
+      </ion-input>
+    </ion-card>
+
+
+    <ion-item>
+      <ion-label>Ingredients</ion-label>
+    </ion-item>
+      <ion-card >
+      <ion-input
+        row="6"
+        type="text"
+        placeholder="Ingredients"
+        [(ngModel)]="ingredientsProp">
+      </ion-input>
+    </ion-card>
+
+
+    <ion-item>
+      <ion-label >Description</ion-label>
+    </ion-item>
+      <ion-card >
+      <ion-input
+        row="10"
+        type="text"
+        placeholder="Description"
+        [(ngModel)]="descriptionProp">
+      </ion-input>
+    </ion-card>
+
+
+    <ion-item>
+      <ion-label >Add photo of the food</ion-label> </ion-item>
+      <ion-card >
+      <ion-input
+        row="5"
+        column="5"
+        icon="camera"
+        placeholder="image of the food"
+        [(ngModel)]="imgUrlProp">
+      </ion-input>
+
+    </ion-card>
+
+  </ion-list>
+
+  <button ion-button
+          color="primary"
+          round (click)="create()"> Add your recipe
+  </button>
+
+</ion-content>
+
+
